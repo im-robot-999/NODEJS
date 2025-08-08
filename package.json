@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-programs-collection",
+  "version": "1.0.0",
+  "description": "A collection of Node.js programs demonstrating various concepts and functionality",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "programs",
+    "examples",
+    "learning"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

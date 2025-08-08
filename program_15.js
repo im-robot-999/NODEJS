@@ -1,15 +1,15 @@
 /**
  * This script prompts the user to enter a URL with a query string,
  * then parses and displays each key-value pair from the query string.
- * 
+ *
  * Example input:
  *   https://example.com/page?name=John&age=30
- * 
+ *
  * Example output:
  *   Query string key-value pairs:
  *   name: John
  *   age: 30
- * 
+ *
  * How it works:
  *   1. Prompts user for a URL.
  *   2. Parses the URL and extracts the query string.

@@ -1,7 +1,7 @@
 /**
  * This script prompts the user to enter a URL with a query string,
  * parses the URL, and logs the query parameters as an object.
- * 
+ *
  * Example usage:
  *   node program_14.js
  *   > Enter a URL with query string: https://example.com/page?foo=bar&baz=qux

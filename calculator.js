@@ -21,7 +21,7 @@
  * @param {number} b
  * @returns {number}
  */
-function add(a, b) {
+function add (a, b) {
   return a + b;
 }
 
@@ -31,7 +31,7 @@ function add(a, b) {
  * @param {number} b
  * @returns {number}
  */
-function subtract(a, b) {
+function subtract (a, b) {
   return a - b;
 }
 
@@ -41,7 +41,7 @@ function subtract(a, b) {
  * @param {number} b
  * @returns {number}
  */
-function multiply(a, b) {
+function multiply (a, b) {
   return a * b;
 }
 
@@ -52,7 +52,7 @@ function multiply(a, b) {
  * @param {number} b
  * @returns {number|string}
  */
-function divide(a, b) {
+function divide (a, b) {
   return b !== 0 ? a / b : 'Cannot divide by zero';
 }
 

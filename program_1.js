@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
   const filename = q.pathname.substring(1); // remove leading '/'
 
   if (!filename) {
-    res.writeHead(400, {'Content-Type': 'text/plain'});
+    res.writeHead(400, { 'Content-Type': 'text/plain' });
     res.end('No file specified.');
     return;
   }
@@ -42,7 +42,7 @@ const server = http.createServer((req, res) => {
   // Read and return file content with each line commented
   fs.readFile(filename, 'utf8', (err, data) => {
     if (err) {
-      res.writeHead(404, {'Content-Type': 'text/plain'});
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('File not found!');
     } else {
       // Split the file into lines, prepend '// ' to each line, and join them back
@@ -50,7 +50,7 @@ const server = http.createServer((req, res) => {
         .split(/\r?\n/)
         .map(line => '// ' + line)
         .join('\n');
-      res.writeHead(200, {'Content-Type': 'text/plain'});
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
       res.end(commentedLines);
     }
   });

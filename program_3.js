@@ -38,12 +38,12 @@ rl.question('Enter first number: ', (a) => {
       a = parseFloat(a);
       b = parseFloat(b);
       let result;
-      switch(op) {
-        case '+': result = calc.add(a, b); break;
-        case '-': result = calc.subtract(a, b); break;
-        case '*': result = calc.multiply(a, b); break;
-        case '/': result = calc.divide(a, b); break;
-        default: result = 'Invalid operation';
+      switch (op) {
+      case '+': result = calc.add(a, b); break;
+      case '-': result = calc.subtract(a, b); break;
+      case '*': result = calc.multiply(a, b); break;
+      case '/': result = calc.divide(a, b); break;
+      default: result = 'Invalid operation';
       }
       // Prepend "// " to the result line as a comment
       console.log(`// Result: ${result}`);

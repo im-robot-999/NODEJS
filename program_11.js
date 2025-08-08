@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
   const filename = q.pathname.substring(1); // remove leading '/'
 
   if (!filename) {
-    res.writeHead(400, {'Content-Type': 'text/plain'});
+    res.writeHead(400, { 'Content-Type': 'text/plain' });
     res.end('No file specified.');
     return;
   }
@@ -41,10 +41,10 @@ const server = http.createServer((req, res) => {
   // Read and return file content
   fs.readFile(filename, (err, data) => {
     if (err) {
-      res.writeHead(404, {'Content-Type': 'text/plain'});
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('File not found!');
     } else {
-      res.writeHead(200, {'Content-Type': 'text/plain'});
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
       res.end(data);
     }
   });
